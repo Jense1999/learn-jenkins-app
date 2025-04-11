@@ -14,7 +14,7 @@ pipeline {
                     ls -la
                     node --version
                     npm --version
-                    apk add --no-cache python3 make g++ \
+                    apk add --no-cache python3 make g++ 
                     && npm ci
                     && npm run build
                     ls -la
