@@ -45,7 +45,7 @@ pipeline {
             agent {
                 docker {
                     image 'mcr.microsoft.com/playwright:v1.39.0-jammy'
-                    args '--network=host'
+                    args '--network=host -u root:root'
                     reuseNode true
                 }
             }
