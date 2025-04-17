@@ -13,6 +13,7 @@ pipeline {
             agent {
                 docker {
                     image 'amazon/aws-cli'
+                    args "--network=host -u root --entrypoint=''"
                 }
             }
 
